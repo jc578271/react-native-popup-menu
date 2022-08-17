@@ -1777,15 +1777,15 @@
         }, this.props.children), React__default.createElement(reactNative.SafeAreaView, {
           style: styles$3.safeArea,
           pointerEvents: "box-none"
-        }, React__default.createElement(MenuPlaceholder, {
-          ctx: this,
-          backdropStyles: customStyles.backdrop,
-          ref: this._onPlaceholderRef
-        }), React__default.createElement(reactNative.View, {
+        }, React__default.createElement(reactNative.View, {
           style: styles$3.flex1,
           collapsable: false,
           pointerEvents: "box-none",
           onLayout: this._onSafeAreaLayout
+        }), React__default.createElement(MenuPlaceholder, {
+          ctx: this,
+          backdropStyles: customStyles.backdrop,
+          ref: this._onPlaceholderRef
         }))));
       }
     }, {
