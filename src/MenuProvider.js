@@ -226,16 +226,16 @@ export default class MenuProvider extends Component {
             style={styles.safeArea}
             pointerEvents="box-none"
           >
+            <MenuPlaceholder
+                ctx={this}
+                backdropStyles={customStyles.backdrop}
+                ref={this._onPlaceholderRef}
+            />
             <View
               style={styles.flex1}
               collapsable={false}
               pointerEvents="box-none"
               onLayout={this._onSafeAreaLayout}/>
-            <MenuPlaceholder
-              ctx={this}
-              backdropStyles={customStyles.backdrop}
-              ref={this._onPlaceholderRef}
-              />
           </SafeAreaView>
         </View>
       </PopupMenuContext.Provider>
